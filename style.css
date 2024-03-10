@@ -1,0 +1,76 @@
+h1{
+    color:lightgray;
+    text-align: center;
+}
+h2, h3, h4{
+    margin: 0;
+}
+body, html{
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+main{
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex: 1; */
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+
+.flex-row-container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column-container{
+    display: flex;
+    flex-direction: column;
+}
+.site-header{
+    background-color: dimgray;
+    padding-inline: 10px;
+}
+/* .site-content{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+} */
+.site-footer{
+    background-color: dimgray;
+    padding-inline: 10px;
+    margin-top: auto;
+}
+.nav-button-container{
+    margin-left: auto;
+}
+.nav-button{
+    background-color: dimgray;
+    color: lightgray;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+.nav-button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.tab-content{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+}
+.centered-content{
+    align-items: center;
+    justify-content: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+}
