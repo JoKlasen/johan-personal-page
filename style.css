@@ -16,13 +16,18 @@ main{
     /* align-items: center; */
     /* justify-content: center; */
     /* flex: 1; */
+    display: flex;
     flex-direction: column;
     overflow: auto;
     height: 100%;
+    padding: 5%;
 }
 button{
     font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
+    cursor: pointer;
+}
+ul{
+    margin: 0;
 }
 
 
@@ -38,17 +43,13 @@ button{
     background-color: dimgray;
     padding-inline: 10px;
 }
-/* .site-content{
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-} */
 .site-footer{
     background-color: dimgray;
     padding-inline: 10px;
     margin-top: auto;
 }
 .nav-button-container{
+    flex-wrap: wrap;
     margin-left: auto;
 }
 .nav-button{
@@ -56,21 +57,52 @@ button{
     color: lightgray;
     border: none;
     border-radius: 10px 10px 0 0;
+    text-decoration: underline;
 }
 .nav-button:hover{
     background-color: gray;
-    cursor: pointer;
 }
 .tab-content{
     display: none;
-    height: 100%;
     flex-direction: column;
 }
 .centered-content{
+    flex: 1;
     align-items: center;
     justify-content: center;
+}
+.collapsible{
+    border: none;
+    border-radius: 6px 6px 0 0;
+    padding: 2%;
+    margin-top: 2%;
+    text-align: left;
+    background-color: dimgray;
+    font-size: large;
+    font-weight: bold;
+    color: Black;
+}
+.hidden-collapsible, .collapsible:hover{
+    border-radius: 6px;
+    background-color: gray;
+}
+.hidden-collapsible:hover{
+    background-color: dimgray;
+}
+.collapsible::after{
+    content: "\2796";
+    float: right;
+    color: lightgray;
+    margin-left: 5px;
+}
+.hidden-collapsible::after{
+    content: '\02795';
 }
 .project{
     display: flex;
     flex-direction: column;
+    background-color: dimgray;
+    padding: 3%;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 1%;
 }

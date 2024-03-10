@@ -15,3 +15,16 @@ function changeTab(tabName,elmnt) {
     document.getElementById(tabName).style.display = "flex";
     elmnt.style.backgroundColor = "gray";
 }
+
+function collapse(elmnt) {
+    elmnt.classList.toggle("hidden-collapsible")
+
+    var projcontent = elmnt.nextElementSibling;
+
+    if (projcontent.style.display !== "none") {
+        projcontent.style.display = "none";
+    } else {
+        projcontent.style.display = "flex";
+    }
+
+}
