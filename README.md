@@ -1,2 +1,2 @@
 # johan-personal-page
-Simpel webpage to host personal stuff and project portfolio.
+Simple webpage to host personal stuff and project portfolio.
