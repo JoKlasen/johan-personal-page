@@ -133,6 +133,13 @@ ul{
     /* text-decoration: none; */
     color: black; 
 }
+.resource-link{
+    color: black;
+    font-weight: bold;
+}
+.resource-link:visited{
+    color: black;
+}
 
 #Home{
     flex: 1;

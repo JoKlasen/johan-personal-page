@@ -20,7 +20,7 @@
             </div>
             <div class="flex-row-container nav-button-container">
                 <button class="nav-button" id="defaultPage" onclick="changeTab('Home', this)">Home</button>
-                <button class="nav-button" onclick="changeTab('Nonsense', this)">Nonsense</button>
+                <!-- <button class="nav-button" onclick="changeTab('Nonsense', this)">Nonsense</button> -->
                 <button class="nav-button" onclick="changeTab('Projects', this)">Projects</button>
                 <button class="nav-button" onclick="changeTab('Contact', this)">Contact</button>
             </div>
@@ -33,7 +33,7 @@
                 <h3> Have a look around!</h3>
 
             </div>
-            <div id="Nonsense" class="tab-content centered-content">
+            <!-- <div id="Nonsense" class="tab-content centered-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
@@ -43,12 +43,17 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
                 </p>
-            </div>
+            </div> -->
             <div id="Projects" class="tab-content">
                 <h2>Projects</h2>
 
-                <button type="button" class="collapsible" onclick="collapse(this)">Pong in AVR-Assembly [Video Link]</button>
+                <button type="button" class="collapsible" onclick="collapse(this)">Pong in AVR-Assembly</button>
                 <div class="project">
+                    <div class="flex-row-container">
+                        <a href="https://github.com/JoKlasen/tsiu51-pong-avr-assembly/" class="resource-link" target="_blank">[Code]</a>
+                        <a href="./resources/pdfs/TSIU51_ProjektRapport_utan_bilaga_v2.pdf" class="resource-link" target="_blank">[Doc]</a>
+                        <a href="./resources/videos/DAvid_pong_demo.mp4" class="resource-link" target="_blank">[Video]</a>
+                    </div>
                     <p>A two man project with the goal to build a working game on a custom development board with set hardware.</p>
                     <h4>Acquired skills:</h4><br>
                     <ul>
@@ -62,10 +67,14 @@
 
                 <button type="button" class="collapsible" onclick="collapse(this)">Leviate PWA</button>
                 <div class="project">
-                    <p>Leviate is a backend-less progressive web application aimed to facilitate tracking and logging of migraine attacks, which can then be used as basis for patient diagnosis or identifying patterns or triggers for the patients migraine.
+                    <div class="flex-row-container">
+                        <a href="https://2022-group.leviate.pages.dev/" class="resource-link" target="_blank">[Demo Page]</a>
+                    </div>
+                    <p>Leviate is a backend-less Progressive Web Application aimed to facilitate tracking and logging of migraine attacks, which can then be used as basis for patient diagnosis or identifying patterns or triggers for the patients migraine.
                     This group project aimed to continue development of a PWA created by another project group form the previous year and to implement new and modify existing features in close relation to the customer.</p>
                     <h4>Acquired skills:</h4><br>
                     <ul>
+                        <li>Working in close proximity to a costumer/product owner to create stories and tasks for their application.</li>
                         <li>HTML/CSS/JavaScript and the Svelte/Sveltekit framework.</li>
                         <li>Working in an Agile workflow.</li>
                         <li>Familiarization with a existing code base with limited documentation.</li>
@@ -75,10 +84,13 @@
 
                 <button type="button" class="collapsible" onclick="collapse(this)">Twidder</button>
                 <div class="project">
+                    <div class="flex-row-container">
+                        <a href="https://github.com/JoKlasen/tddd97-twidder-clone/" class="resource-link" target="_blank">[Code]</a>
+                    </div>
                     <p>A duo project in web programming, with the goal to create a twitter-like clone.</p>
                     <h4>Acquired skills:</h4><br>
                     <ul>
-                        <li>Fullstack development with HTML/CSS/JavaScript as a frontend and Python/Flask/SQLite backend.</li>
+                        <li>Fullstack development with HTML/CSS/JavaScript as frontend and Python/Flask/SQLite backend.</li>
                         <li>Websockets, HTTP status code handling, and both writing and using existing (REST)API:s.</li>
                         <li>Working in virtual environments and cloud deployment with Azure.</li>
                     </ul>
@@ -86,6 +98,12 @@
 
                 <button type="button" class="collapsible" onclick="collapse(this)">Selfdriving Taxi Robot</button>
                 <div class="project">
+                    <div class="flex-row-container">
+                        <a href="https://github.com/JoKlasen/tsea29-autonom-taxibil" class="resource-link" target="_blank">[Code]</a>
+                        <a href="./resources/pdfs/TSEA29_tekdok_1.0.pdf" class="resource-link" target="_blank">[Technical Doc]</a>
+                        <a href="https://github.com/JoKlasen/tsea29-autonom-taxibil/tree/master/docs" class="resource-link" target="_blank">[Other Docs]</a>
+                        <a href="./resources/videos/TESEA29_taxibil_demo.mp4" class="resource-link" target="_blank">[Video]</a>
+                    </div>
                     <p>A six man group project in construction with microcontrollers, while strictly following the LIPS-project model.
                     The goal was to was to create a selfdriving taxi robot which would with the help of computer vision autonomously be able to follow a set track, while stopping at different taxispots to "pick up" and "drop off" imaginary passangers.
                     The product was developed in close realation of a "customer" represented by the course-representatives, with strict design-demands such as a module-based product.
@@ -101,16 +119,28 @@
                     </ul>
                 </div>
 
-                <!-- <button type="button" class="collapsible" onclick="collapse(this)">FPGA (??)</button>
+                <button type="button" class="collapsible" onclick="collapse(this)">FPGA Audio Frequency Analyzer</button>
                 <div class="project">
-                    <p>Description</p>
+                    <div class="flex-row-container">
+                        <a href="./resources/pdfs/TSIU03_Final_Presentation.pdf" class="resource-link" target="_blank">[Presentation]</a>
+                        <a href="./resources/pdfs/TSIU03_Project_Report.pdf" class="resource-link" target="_blank">[Project Doc]</a>
+                        <a href="./resources/videos/TSIU03_demo.mp4" class="resource-link" target="_blank">[Video]</a>
+                    </div>
+                    <p>This was a 5 man group project in system design and was done on a Terasic DE2-115 Dev board with a Altera Cyclone IV FPGA.
+                        The project was written in VHDL and the goal was to create a product which could manipulate and analyze incoming sound and display the information on a VGA-display.
+                        In this case it resulted in a volume- and left/right balance-control with a PS2-keyboard, a filter array to analyze four different frequency bands, and an overall frequency oscilloscope.
+                        The group consisted of a mix of LiU students from different programs and exchange students.
+                    </p>
                     <h4>Acquired skills:</h4><br>
                     <ul>
-                        <li></li>
+                        <li>Low level systems design with purpouse built functionallity.</li>
+                        <li>Basic VHDL and FPGA programming.</li>
+                        <li>Working in a group with widely different technical backgrounds and language skills.</li>
+                        <li>Using testbenches for more advanced debugging.</li>
                     </ul>
                 </div>
 
-                <button type="button" class="collapsible" onclick="collapse(this)">Doodle Jump clone</button>
+                <!-- <button type="button" class="collapsible" onclick="collapse(this)">Doodle Jump clone</button>
                 <div class="project">
                     <p>Description</p>
                     <h4>Acquired skills:</h4><br>
